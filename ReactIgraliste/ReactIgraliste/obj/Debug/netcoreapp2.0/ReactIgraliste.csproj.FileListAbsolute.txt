@@ -1,0 +1,13 @@
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\bin\Debug\netcoreapp2.0\x86\e_sqlite3.dll
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\bin\Debug\netcoreapp2.0\x64\e_sqlite3.dll
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\bin\Debug\netcoreapp2.0\ReactIgraliste.deps.json
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\bin\Debug\netcoreapp2.0\ReactIgraliste.runtimeconfig.json
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\bin\Debug\netcoreapp2.0\ReactIgraliste.runtimeconfig.dev.json
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\bin\Debug\netcoreapp2.0\ReactIgraliste.dll
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\bin\Debug\netcoreapp2.0\ReactIgraliste.pdb
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\obj\Debug\netcoreapp2.0\ReactIgraliste.csprojResolveAssemblyReference.cache
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\obj\Debug\netcoreapp2.0\ReactIgraliste.csproj.CoreCompileInputs.cache
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\obj\Debug\netcoreapp2.0\ReactIgraliste.AssemblyInfo.cs
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\obj\Debug\netcoreapp2.0\ReactIgraliste.dll
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\obj\Debug\netcoreapp2.0\ReactIgraliste.pdb
