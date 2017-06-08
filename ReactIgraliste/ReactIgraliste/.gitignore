@@ -25,10 +25,13 @@ bin/
 Bin/
 obj/
 Obj/
+obj/Debug/
+# obj/Debug/netcoreapp2.0/TypeScriptCompilerOutput.txt
 
 # Visual Studio 2015 cache/options directory
 .vs/
 /wwwroot/dist/
+/wwwroot/assets/
 /dist/
 
 /yarn.lock
