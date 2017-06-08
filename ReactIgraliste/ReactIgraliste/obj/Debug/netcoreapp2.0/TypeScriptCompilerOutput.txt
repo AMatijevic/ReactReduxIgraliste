@@ -2,3 +2,7 @@ C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\dist\debug\components\App
 C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\dist\debug\components\App.js.map
 C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\dist\debug\index.js
 C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\dist\debug\index.js.map
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\dist\debug\components\App.js
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\dist\debug\components\App.js.map
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\dist\debug\index.js
+C:\Osobno\ReactIgraliste\ReactIgraliste\ReactIgraliste\dist\debug\index.js.map
