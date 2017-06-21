@@ -37,6 +37,8 @@ namespace ReactReduxTs
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+            app.UseBrowserLink();
+
             app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseMvc();
