@@ -2,7 +2,7 @@
 export class App extends React.Component<undefined, undefined>{
     render() {
         const divStyle = {
-            color: 'blue',
+            color: 'Green',
             background: 'beige'
         };
         return <div style={divStyle}>
