@@ -1,4 +1,15 @@
 ﻿import * as React from "react";
+//import Counter from "./counter";
+//import CounterTwo from "./counterTwo";
+//import CounterThree from "./counterThree";
+import Cards from "./cards";
+
+//<h1>App is set up</h1>
+//<p>Some text from react app</p>
+//<Counter></Counter>
+//<CounterTwo></CounterTwo>
+//<CounterThree helloMessage={'Hello from my third counter component'}></CounterThree>
+
 export class App extends React.Component<undefined, undefined>{
     render() {
         const divStyle = {
@@ -6,8 +17,7 @@ export class App extends React.Component<undefined, undefined>{
             background: 'beige'
         };
         return <div style={divStyle}>
-            <h1>App is set up</h1>
-            <p>Some text from react app</p>
+            <Cards></Cards>
         </div>;
     }
 }

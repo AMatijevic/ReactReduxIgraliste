@@ -1,4 +1,4 @@
-﻿/// <binding BeforeBuild='Run - Development' />
+/// <binding />
 const webpack = require('webpack');
 const path = require('path');
 //const bundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
