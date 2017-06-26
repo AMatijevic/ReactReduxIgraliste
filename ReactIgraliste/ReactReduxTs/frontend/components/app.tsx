@@ -1,8 +1,9 @@
 ﻿import * as React from "react";
+
 //import Counter from "./counter";
 //import CounterTwo from "./counterTwo";
 //import CounterThree from "./counterThree";
-import Cards from "./cards";
+//import Cards from "./cards";
 
 //<h1>App is set up</h1>
 //<p>Some text from react app</p>
@@ -10,17 +11,33 @@ import Cards from "./cards";
 //<CounterTwo></CounterTwo>
 //<CounterThree helloMessage={'Hello from my third counter component'}></CounterThree>
 
+//If you wont to see cards example just uncoment this App component
+//export class App extends React.Component<undefined, undefined>{
+//    render() {
+//        const divStyle = {
+//            color: 'Green',
+//            background: 'beige'
+//        };
+//        return <div style={divStyle}>
+//            <Cards></Cards>
+//        </div>;
+//    }
+//}
+
+//interface IAppProps {
+//};
+
 export class App extends React.Component<undefined, undefined>{
     render() {
-        const divStyle = {
-            color: 'Green',
-            background: 'beige'
-        };
-        return <div style={divStyle}>
-            <Cards></Cards>
-        </div>;
+       return <div>
+           <p>Header here...</p>
+           {this.props.children}
+        </div>
     }
 }
+export default App;
+
+
 
 //ES5 createClass
 //var HelloWorld = React.createClass({
