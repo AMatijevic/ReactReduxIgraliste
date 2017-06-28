@@ -1,4 +1,13 @@
 ﻿import * as React from "react";
+import HomePage from './home/HomePage'
+import AboutPage from './about/AboutPage'
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    IndexRoute,
+    Switch
+} from 'react-router-dom'
 
 //import Counter from "./counter";
 //import CounterTwo from "./counterTwo";
@@ -29,9 +38,18 @@
 
 export class App extends React.Component<undefined, undefined>{
     render() {
-       return <div>
-           <p>Header here...</p>
-           {this.props.children}
+        return <div>
+            <nav>
+                <Link to="/">Home</Link>
+                {" | "}
+                <Link to="/about">About</Link>
+            </nav>
+            <main>
+                <Switch>
+                    <Route exact path='/' component={HomePage} />
+                    <Route path='/about' component={AboutPage} />
+                </Switch>
+            </main>
         </div>
     }
 }
