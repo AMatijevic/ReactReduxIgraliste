@@ -6,18 +6,24 @@ import {
     IndexRoute,
     Switch
 } from 'react-router-dom'
-import App from './app'
+//import App from './app'
 import HomePage from './home/HomePage'
 import AboutPage from './about/AboutPage'
+import CoursesPage from './courses/CoursesPage'
 
-export default (
-    <main>
-        <Switch>
-            <Route exact path='/' component={HomePage} />
-            <Route path='/about' component={AboutPage} />
-        </Switch>
-    </main>
-);
+const Routes = () => {
+    return (
+        <main>
+            <Switch>
+                <Route exact path='/' component={HomePage} />
+                <Route path='/about' component={AboutPage} />
+                <Route path='/courses' component={CoursesPage} />
+            </Switch>
+        </main>
+    );
+}
+
+export default Routes;
 
 
 

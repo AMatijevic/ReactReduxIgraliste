@@ -1,13 +1,15 @@
 ﻿import * as React from "react";
-import HomePage from './home/HomePage'
-import AboutPage from './about/AboutPage'
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    IndexRoute,
-    Switch
-} from 'react-router-dom'
+//import HomePage from './home/HomePage'
+//import AboutPage from './about/AboutPage'
+import Header from './header'
+import Routes from './routes'
+//import {
+//    BrowserRouter as Router,
+//    Route,
+//    Link,
+//    IndexRoute,
+//    Switch
+//} from 'react-router-dom'
 
 //import Counter from "./counter";
 //import CounterTwo from "./counterTwo";
@@ -39,17 +41,8 @@ import {
 export class App extends React.Component<undefined, undefined>{
     render() {
         return <div>
-            <nav>
-                <Link to="/">Home</Link>
-                {" | "}
-                <Link to="/about">About</Link>
-            </nav>
-            <main>
-                <Switch>
-                    <Route exact path='/' component={HomePage} />
-                    <Route path='/about' component={AboutPage} />
-                </Switch>
-            </main>
+            <Header></Header>
+            <Routes></Routes>
         </div>
     }
 }
