@@ -1,8 +1,18 @@
-﻿import * as React from "react";
+﻿//import { } from "../../wwwroot/app.css";
+
+
+import '../../node_modules/materialize-css/dist/css/materialize.css'
+import "../../wwwroot/app.css";
+
+import '../../node_modules/materialize-css/dist/js/materialize.js'
+
+
+import * as React from "react";
 //import HomePage from './home/HomePage'
 //import AboutPage from './about/AboutPage'
 import Header from './header'
 import Routes from './routes'
+
 //import {
 //    BrowserRouter as Router,
 //    Route,

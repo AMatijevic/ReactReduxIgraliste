@@ -27,16 +27,26 @@ module.exports = {
     module: {
         rules: [
             // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
-            { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
-
+            { test: /\.tsx?$/, use: "awesome-typescript-loader" },
+            { test: /\.css?$/, use: ['style-loader', 'css-loader'] },
+            { test: /\.(png|jpg|jpeg|gif|eot|svg|ttf|woff|woff2|cur)$/, loader: 'url-loader?limit=25000' },
+            { test: /\.(svg|ttf)$/, loader: 'file-loader?limit=25000' },
             // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
-            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
+            { enforce: "pre", test: /\.js$/, use: "source-map-loader" }
+          
         ]
     },
     plugins: [
         new webpack.DllReferencePlugin({
             context: ".",
             manifest: require("./wwwroot/assets/vendor-manifest.json")
+        }),
+        new webpack.ProvidePlugin({
+            jQuery: 'jquery',
+            $: 'jquery',
+            jquery: 'jquery',
+            'window.$': 'jquery',
+            'window.jQuery': 'jquery'
         })
         //new bundleAnalyzerPlugin({
         //    analyzerMode: 'static'
