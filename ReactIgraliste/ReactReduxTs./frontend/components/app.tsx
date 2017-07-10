@@ -24,7 +24,7 @@ import Routes from './routes'
 //import Counter from "./counter";
 //import CounterTwo from "./counterTwo";
 //import CounterThree from "./counterThree";
-//import Cards from "./cards";
+import Cards from "./cards";
 
 //<h1>App is set up</h1>
 //<p>Some text from react app</p>
@@ -33,30 +33,30 @@ import Routes from './routes'
 //<CounterThree helloMessage={'Hello from my third counter component'}></CounterThree>
 
 //If you wont to see cards example just uncoment this App component
-//export class App extends React.Component<undefined, undefined>{
-//    render() {
-//        const divStyle = {
-//            color: 'Green',
-//            background: 'beige'
-//        };
-//        return <div style={divStyle}>
-//            <Cards></Cards>
-//        </div>;
-//    }
-//}
+export class App extends React.Component<undefined, undefined>{
+    render() {
+        const divStyle = {
+            color: 'Green',
+            background: 'beige'
+        };
+        return <div style={divStyle}>
+            <Cards></Cards>
+        </div>;
+    }
+}
 
 //interface IAppProps {
 //};
 
-export class App extends React.Component<undefined, undefined>{
-    render() {
-        return <div>
-            <Routes></Routes>
-            <Header></Header>
-        </div>
-    }
-}
-export default App;
+//export class App extends React.Component<undefined, undefined>{
+//    render() {
+//        return <div>
+//            <Header></Header>
+//            <Routes></Routes>
+//        </div>
+//    }
+//}
+//export default App;
 
 
 
