@@ -48,8 +48,8 @@ import Routes from './routes'
 export class App extends React.Component<undefined, undefined>{
     render() {
         return <div>
-            <Routes></Routes>
             <Header></Header>
+            <Routes></Routes>
         </div>
     }
 }

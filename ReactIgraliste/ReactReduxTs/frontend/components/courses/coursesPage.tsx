@@ -38,16 +38,17 @@ class CoursesPage extends React.Component<ICourseProps, ICourseState>{
     render() {
         return <div>
             <h1>Courses</h1>
-            <h2>Add Course</h2>
-            <div class="row">
-                <div class="input-field col s6">
+            <h4>Add Course</h4>
+            <div className ="row">
+                <div className="input-field col s6">
                     <input placeholder="Title" id="title" type="text" onChange={this.onTitleChange} value={this.state.course.title} />
-                    <label for="first_name">First Name</label>
+                    <label>Title</label>
                 </div>
+                <button className="btn waves-effect waves-light" type="submit" name="action" onClick={this.onClickSave}>
+                    Submit
+                </button>
             </div>
-            <button class="btn waves-effect waves-light" type="submit" name="action" onClick={this.onClickSave}>
-                Submit <i class="material-icons right">send</i>
-            </button>
+           
                
 
 
