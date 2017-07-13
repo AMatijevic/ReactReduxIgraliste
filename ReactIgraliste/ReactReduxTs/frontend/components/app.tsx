@@ -35,13 +35,10 @@ import Routes from './routes'
 //If you wont to see cards example just uncoment this App component
 //export class App extends React.Component<undefined, undefined>{
 //    render() {
-//        const divStyle = {
-//            color: 'Green',
-//            background: 'beige'
-//        };
-//        return <div style={divStyle}>
-//            <Cards></Cards>
-//        </div>;
+//        return <div>
+//            <Header></Header>
+//            <Routes></Routes>
+//        </div>
 //    }
 //}
 

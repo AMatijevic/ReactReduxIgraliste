@@ -4,7 +4,7 @@ import Form from "./form";
 
 interface ICardsState {
     cards: Array<any>;
-    userName: string;
+    //userName: string;
 }
 export class Cards extends React.Component<undefined, ICardsState> {
     constructor(props) {
@@ -15,20 +15,20 @@ export class Cards extends React.Component<undefined, ICardsState> {
                 { name: 'name gb', company: 'company hh', id:2 },
                 { name: 'name gb', company: 'company hh', id:3 }
             ],
-            userName:''
+            //userName:''
         }
     }
 
     onClickHandler = () => {
-        this.setState((current: ICardsState) => ({ cards: current.cards.concat({ name: this.state.userName, company: 'test', id: current.cards.length + 1 }) }));
+        this.setState((current: ICardsState) => ({ cards: current.cards.concat({ name: 'test user name', company: 'test company', id: current.cards.length + 1 }) }));
     }
-    onChangeTxt = (event: React.ChangeEvent<any>) => {
-        this.setState({ userName: event.target.value });
-    }
+    //onChangeTxt = (event: React.ChangeEvent<any>) => {
+    //    this.setState({ userName: event.target.value });
+    //}
 
     handleSubmit = (data) => {
         this.setState((current: ICardsState) => ({ cards: current.cards.concat({ name: data.name, company: data.company, imageUrl: data.avatar_url, id: current.cards.length + 1 }) }));       
-        console.log("Event form submit",this.state.userName);
+        //console.log("Event form submit",this.state.userName);
     }
 
     render() {
