@@ -1,15 +1,20 @@
 ﻿import * as React from 'react'
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux'
+import * as courseAction from '../../actions/courseAction';
 //import {
 //    BrowserRouter as Router,
 //    Route,
 //    Link
 //} from 'react-router-dom'
 interface ICourseProps {
+    courses: any,
+    dispatch: Function
 }
 interface ICourseState {
     course: ICourse;
 }
-interface ICourse {
+export interface ICourse {
     title: string;
 }
 
@@ -32,7 +37,8 @@ class CoursesPage extends React.Component<ICourseProps, ICourseState>{
     }
 
     onClickSave = () => {
-        alert(`Saving ${this.state.course.title}`);
+        //alert(`Saving ${this.state.course.title}`);
+        this.props.dispatch(courseAction.createCourse(this.state.course))
     }
 
     render() {
@@ -48,13 +54,20 @@ class CoursesPage extends React.Component<ICourseProps, ICourseState>{
                     Submit
                 </button>
             </div>
-           
-               
-
-
-           
         </div>
     }
 }
 
-export default CoursesPage;
+const mapStateToProps = (state, ownProps): any => {
+    return {
+        courses : state.courses
+    };
+}
+
+//const connectedStateAndProps = connect(mapStateToProps, mapDispatchToProps);
+//export default connectedStateAndProps(CoursesPage);
+
+//export default connect(mapStateToProps, mapDispatchToProps)(CoursesPage)
+export default connect(mapStateToProps)(CoursesPage)
+
+//export default CoursesPage;

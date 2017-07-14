@@ -10,6 +10,8 @@ import {
     IndexRoute
 } from 'react-router-dom'
 import { App } from "./components/App";
+import configureStore from './store/configureStore'
+import {Provider} from 'react-redux'
 //import routes from './components/routes'
 //import HomePage from './components/home/HomePage'
 //import AboutPage from './components/about/AboutPage'
@@ -20,13 +22,15 @@ import { App } from "./components/App";
 //    //</AppContainer>,
 //    document.getElementById("app")
 //);
-
+const store = configureStore();
 ReactDOM.render(
     //<Router>
     //    <Route path="/" component={App} />
     //</Router>,
-    <Router>
-        <App />
-    </Router>,
+    <Provider store={store}>
+        <Router>
+            <App />
+        </Router>
+    </Provider>,
     document.getElementById("app")
 );

@@ -8,7 +8,7 @@ module.exports = {
     //entry: "./frontend/index.tsx",
     entry: {
         //app: './index.tsx',
-        vendor: ['react', 'react-dom', 'react-router-dom', 'jquery']
+        vendor: ['react', 'react-dom', 'react-router-dom', 'jquery', 'react-redux', 'redux','redux-immutable-state-invariant']
     },
     //__dirname refers to the directory where this webpack.config.js lives, which in this blogpost is the project root
     output: {
