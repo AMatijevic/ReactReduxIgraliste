@@ -38,12 +38,17 @@ class CoursesPage extends React.Component<ICourseProps, ICourseState>{
 
     onClickSave = () => {
         //alert(`Saving ${this.state.course.title}`);
-        this.props.dispatch(courseAction.createCourse(this.state.course))
+        this.props.dispatch({ type: 'CREATE_COURSE', course: this.state.course})//courseAction.createCourse(this.state.course))
+    }
+
+    courseRow = (course: ICourse, index: number) => {
+        return <div key={index}>{course.title}</div>
     }
 
     render() {
         return <div>
             <h1>Courses</h1>
+            {this.props.courses.map(this.courseRow)}
             <h4>Add Course</h4>
             <div className ="row">
                 <div className="input-field col s6">
