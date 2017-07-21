@@ -4,14 +4,14 @@ import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
 import { ICourse } from "../components/courses/coursesPage"
 
 //https://stackoverflow.com/questions/44079820/what-is-export-type-in-typescript
-export namespace Store {
+//export namespace Store {
 
-    export type Courses = { value: ICourse[] }
+//    export type Courses = { value: ICourse[] }
 
-    export type All = {
-        Courses: Courses
-    }
-}
+//    export type All = {
+//        Courses: Courses
+//    }
+//}
 
 
 export default function configureStore(initialState) {
