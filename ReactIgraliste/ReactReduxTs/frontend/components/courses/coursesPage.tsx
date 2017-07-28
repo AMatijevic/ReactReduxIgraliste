@@ -34,15 +34,17 @@ class CoursesPage extends React.Component<ICourseProps, ICourseState>{
         const course = this.state.course; 
         course.title = event.target.value;
         this.setState({ course: course });
+
     }
 
     onClickSave = () => {
         //alert(`Saving ${this.state.course.title}`);
-        this.props.dispatch({ type: 'CREATE_COURSE', course: this.state.course})//courseAction.createCourse(this.state.course))
+        this.props.dispatch(courseAction.actionCreators.createCourse(this.state.course))//{ type: 'CREATE_COURSE', payload: this.state.course})//courseAction.createCourse(this.state.course))
+        //this.setState({ course: { title: '' } });
     }
 
     courseRow = (course: ICourse, index: number) => {
-        return <div key={index}>{course.title}</div>
+        return <div style={{ paddingLeft: 30 }} key={index}>{course.title}</div>
     }
 
     render() {
@@ -63,9 +65,9 @@ class CoursesPage extends React.Component<ICourseProps, ICourseState>{
     }
 }
 
-const mapStateToProps = (state, ownProps): any => {
+const mapStateToProps = (state: any, ownProps): any => {
     return {
-        courses : state.courses
+        courses : state.courses.courses
     };
 }
 

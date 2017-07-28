@@ -13,8 +13,16 @@ import { ICourse } from "../components/courses/coursesPage"
 //    }
 //}
 
+export interface CoursesState {
+    courses: ICourse[]
 
-export default function configureStore(initialState) {
+}
+interface ApplicationState {
+    courses: CoursesState
+}
+
+
+export default function configureStore(initialState?: ApplicationState) {
     return createStore(rootReducer, initialState, applyMiddleware(reduxImmutableStateInvariant()));
 
 }

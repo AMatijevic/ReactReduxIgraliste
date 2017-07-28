@@ -22,7 +22,7 @@ import {Provider} from 'react-redux'
 //    //</AppContainer>,
 //    document.getElementById("app")
 //);
-const store = configureStore({courses:[]});
+const store = configureStore();
 ReactDOM.render(
     //<Router>
     //    <Route path="/" component={App} />
