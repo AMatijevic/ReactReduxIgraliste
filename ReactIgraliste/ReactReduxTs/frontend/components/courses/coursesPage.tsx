@@ -9,7 +9,8 @@ import * as courseAction from '../../actions/courseAction';
 //} from 'react-router-dom'
 interface ICourseProps {
     courses: any,
-    dispatch: Function
+    //dispatch: Function
+    createCourse: Function
 }
 interface ICourseState {
     course: ICourse;
@@ -39,7 +40,8 @@ class CoursesPage extends React.Component<ICourseProps, ICourseState>{
 
     onClickSave = () => {
         //alert(`Saving ${this.state.course.title}`);
-        this.props.dispatch(courseAction.actionCreators.createCourse(this.state.course))//{ type: 'CREATE_COURSE', payload: this.state.course})//courseAction.createCourse(this.state.course))
+        //this.props.dispatch(courseAction.actionCreators.createCourse(this.state.course)) //{ type: 'CREATE_COURSE', payload: this.state.course}) //courseAction.createCourse(this.state.course))
+        this.props.createCourse(this.state.course);
         //this.setState({ course: { title: '' } });
     }
 
@@ -68,6 +70,12 @@ class CoursesPage extends React.Component<ICourseProps, ICourseState>{
 const mapStateToProps = (state: any, ownProps): any => {
     return {
         courses : state.courses.courses
+    };
+}
+
+const mapDispatchToProps = (dispatch: Function): any => {
+    return {
+        createCourse: course => dispatch(courseAction.actionCreators.createCourse(course))
     };
 }
 
